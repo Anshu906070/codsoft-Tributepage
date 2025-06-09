@@ -1,0 +1,188 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('images/ms3.jpg'); /* Update path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+  line-height: 1.7;
+}
+
+/* Overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.6));
+  z-index: -1;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Main container */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Section spacing */
+section {
+  margin-top: 40px;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00ffd5;
+  border-bottom: 2px solid #555;
+  padding-bottom: 5px;
+}
+
+/* Image styles */
+#img-div,
+#legacy-img-div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#image,
+#legacy-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+#img-caption,
+#legacy-img-caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Lists */
+ul {
+  padding-left: 25px;
+  margin-top: 10px;
+  color: #eee;
+}
+
+ul li {
+  margin-bottom: 10px;
+  list-style-type: square;
+}
+
+/* Table styles */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #eee;
+}
+
+.stats-table th,
+.stats-table td {
+  border: 1px solid #777;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.stats-table thead {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Blockquote */
+blockquote {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 40px auto;
+  border-left: 5px solid #f0c14b;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #eee;
+  text-align: center;
+  max-width: 800px;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Links */
+a#tribute-link {
+  color: #f0c14b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a#tribute-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .stats-table th, .stats-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
